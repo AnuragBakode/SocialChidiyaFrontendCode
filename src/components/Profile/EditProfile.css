@@ -1,0 +1,16 @@
+.editProfilePage{
+    display : flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    position: fixed;
+    top:50%;
+    left : 50%;
+    transform: translate(-50% , -50%);
+    background-color: white;
+    box-shadow: 0px -1px 10px -6px rgba(0,0,0,0.75);
+    padding : 20px;
+    border-radius : 20px;
+    display: flex;
+    z-index: 999;
+}

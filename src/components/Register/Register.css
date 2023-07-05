@@ -1,0 +1,74 @@
+.register{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height : 90vh;
+}
+
+.Toastify__toast-container{
+    z-index: 900;
+}
+
+.Toastify__close-button{
+    width : max-content
+}
+
+.text{
+    flex : 1;
+    color : black;
+    text-align: center;
+    position: relative;
+}
+
+.text > img{
+    width: 300px;
+    overflow: hidden;
+}
+
+.title { 
+    flex : 1;
+    height : 100%;
+    /* background-color: black; */
+    color : black;
+    text-align: center;
+    display: flex;
+    justify-content: center;align-items: center;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 4rem;
+}
+
+.form{
+    width : 100%;
+    height :93vh ;
+    display : flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex : 1;
+    height : 100%;
+}
+
+.formHeader{
+    width : 400px;
+}
+
+input , button {
+    width : 400px;
+    padding : 15px;
+    margin-top: 20px;
+}
+
+button{
+    border : none;
+    outline : none;
+    background-color: black;
+    color : white;
+    cursor: pointer;
+}
+
+p{
+    margin-top : 10px;
+    margin-bottom: 10px;
+    width: 400px;
+}

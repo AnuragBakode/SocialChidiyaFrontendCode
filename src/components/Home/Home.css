@@ -1,0 +1,21 @@
+.homePage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height : 90vh;
+    position: relative;
+}
+
+.first , .second , .third{
+    width : 400px;
+}
+
+.HomeHeader{
+    position : absolute;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2.5px;
+    -webkit-text-stroke-color: black;
+      font-size: 11rem;
+      text-align: center;
+      user-select: none;
+}
