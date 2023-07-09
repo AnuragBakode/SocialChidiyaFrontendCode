@@ -87,7 +87,9 @@ export const EditProfile = ({
           src={
             image
               ? image
-              : `https://socialchidiyabackendserver.onrender.com/${userDetail.profilePicture}`
+              : userDetail.profilePicture !== "undefined"
+              ? `https://socialchidiyabackendserver.onrender.com/${userDetail.profilePicture}`
+              : process.env.PUBLIC_URL + "/user.png"
           }
           alt=""
           className="photoToBePosted"
