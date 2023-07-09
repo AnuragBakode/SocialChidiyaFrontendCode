@@ -9,6 +9,7 @@ export const EditProfile = ({
   userDetail,
   fetchUserData,
 }) => {
+  console.log(userDetail);
   const [image, setImage] = useState(null);
   const [imageToBeUploaded, setImageToBeUploaded] = useState("");
   const [bio, setBio] = useState(userDetail.bio);
@@ -87,7 +88,7 @@ export const EditProfile = ({
           src={
             image
               ? image
-              : userDetail.profilePicture !== "undefined"
+              : userDetail.profilePicture
               ? `https://socialchidiyabackendserver.onrender.com/${userDetail.profilePicture}`
               : process.env.PUBLIC_URL + "/user.png"
           }
