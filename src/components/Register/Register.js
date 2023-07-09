@@ -34,7 +34,7 @@ export const Register = () => {
         // So we logged in the user and then after lohhin in we sent to setup your profile
         // So that we can have user data to set the account
         axios
-          .post("/login", {
+          .post("https://socialchidiyabackendserver.onrender.com/login", {
             email,
             password,
           })
