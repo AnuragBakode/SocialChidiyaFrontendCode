@@ -85,7 +85,7 @@ export const Navbar = () => {
                   >
                     <img
                       className="searchProfilePicture"
-                      src={`https://socialchidiyabackendserver.onrender.com/${data.profilePicture}`}
+                      src={`${data.profilePicture}`}
                       alt=""
                     />
                     <p>{data.name}</p>
@@ -101,7 +101,7 @@ export const Navbar = () => {
             </div>
             <img
               src={
-                profilePicture !== "undefined" ? (`https://socialchidiyabackendserver.onrender.com/${profilePicture}`) : process.env.PUBLIC_URL + "/user.png"
+                profilePicture !== "undefined" ? (`${profilePicture}`) : process.env.PUBLIC_URL + "/user.png"
               }
               alt=""
               className="profileIcon"
