@@ -110,7 +110,6 @@ export const Post = ({ post, currentUser, isLiked, edit, fetchUserData }) => {
         console.log(err);
       });
   };
-
   return (
     <div key={post._id} className="singlePost">
       <div className="image">
@@ -142,7 +141,9 @@ export const Post = ({ post, currentUser, isLiked, edit, fetchUserData }) => {
                   </div>
                   <div className="commentOwnerDetails">
                     <img
-                      src={`${c.owner.profilePicture}`}
+                      src={
+                        c.owner.profilePicture && c.owner.profilePicture !== "undefined" ? (`${c.owner.profilePicture}`) : process.env.PUBLIC_URL + "/user.png"
+                      }
                       alt=""
                       className="commentOwnerImg"
                     />
@@ -173,9 +174,11 @@ export const Post = ({ post, currentUser, isLiked, edit, fetchUserData }) => {
                   </div>
                   <div className="commentOwnerDetails">
                     <img
-                      src={`https://socialchidiyabackendserver.onrender.com/${localStorage.getItem(
+                      src={
+                        localStorage.getItem("profilePicture") !== "undefined" ?
+                          `https://socialchidiyabackendserver.onrender.com/${localStorage.getItem(
                         "profilePicture"
-                      )}`}
+                          )}` : process.env.PUBLIC_URL + '/user.png'}
                       alt=""
                       className="commentOwnerImg"
                     />

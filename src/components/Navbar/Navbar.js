@@ -86,7 +86,7 @@ export const Navbar = () => {
                     <img
                       className="searchProfilePicture"
                       src={
-                        data.profilePicture !== "undefined" ? (`${data.profilePicture}`) : process.env.PUBLIC_URL + "/user.png"
+                        data.profilePicture && data.profilePicture !== "undefined" ? (`${data.profilePicture}`) : process.env.PUBLIC_URL + "/user.png"
                       }
                       alt=""
                     />
