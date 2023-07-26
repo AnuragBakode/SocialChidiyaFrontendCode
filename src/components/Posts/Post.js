@@ -116,14 +116,14 @@ export const Post = ({ post, currentUser, isLiked, edit, fetchUserData }) => {
       <div className="image">
         <div className="ownerDetails">
           <img
-            src={`https://socialchidiyabackendserver.onrender.com/${post.owner.profilePicture}`}
+            src={`${post.owner.profilePicture}`}
             alt=""
           />
           <h5>{post.owner.name}</h5>
         </div>
         <img
           className="postImage"
-          src={`https://socialchidiyabackendserver.onrender.com/${post.imgUrl}`}
+          src={`${post.imgUrl}`}
           alt=""
         />
       </div>

@@ -89,7 +89,7 @@ export const EditProfile = ({
             image
               ? image
               : userDetail.profilePicture
-              ? `https://socialchidiyabackendserver.onrender.com/${userDetail.profilePicture}`
+              ? `${userDetail.profilePicture}`
               : process.env.PUBLIC_URL + "/user.png"
           }
           alt=""

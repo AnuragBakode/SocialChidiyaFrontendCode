@@ -37,7 +37,7 @@ export const UserDetails = ({
               className="userProfile"
               src={
                 userDetail.profilePicture
-                  ? `https://socialchidiyabackendserver.onrender.com/${userDetail.profilePicture}`
+                  ? `${userDetail.profilePicture}`
                   : process.env.PUBLIC_URL + "home.png"
               }
               alt=""
