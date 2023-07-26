@@ -116,7 +116,9 @@ export const Post = ({ post, currentUser, isLiked, edit, fetchUserData }) => {
       <div className="image">
         <div className="ownerDetails">
           <img
-            src={`${post.owner.profilePicture}`}
+            src={
+              post.owner.profilePicture !== "undefined" ? (`${post.owner.profilePicture}`) : process.env.PUBLIC_URL + "/user.png"
+            }
             alt=""
           />
           <h5>{post.owner.name}</h5>
