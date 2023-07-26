@@ -122,7 +122,7 @@ export const Posts = () => {
                   post={post}
                   currentUser={currentUser}
                   isLiked={isLiked}
-                  edit={false} key={post._id}
+                  edit={post.owner._id === currentUser._id ? true : false} key={post._id}
                 />
               );
             })}
